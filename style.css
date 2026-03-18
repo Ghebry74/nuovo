@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f0f8ff;
+}
+
+#game {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+#background {
+  width: 100%;
+  height: 100%;
+}
+
+#impulso {
+  width: 20px;
+  height: 20px;
+  background: yellow;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  box-shadow: 0 0 10px yellow;
+  transition: all 0.5s ease;
+}
+
+/* Click zone invisibili ma cliccabili */
+.click-zone {
+  position: absolute;
+  border: 2px solid rgba(0,0,0,0);
+  cursor: pointer;
+}
+
+#dendriti { top: 100px; left: 100px; width: 80px; height: 60px; }
+#corpo { top: 180px; left: 200px; width: 80px; height: 60px; }
+#assone { top: 260px; left: 300px; width: 200px; height: 40px; }
+
+/* Drag sinapsi */
+#vescicole {
+  width: 30px;
+  height: 30px;
+  background: purple;
+  border-radius: 50%;
+  position: absolute;
+  top: 250px;
+  left: 520px;
+  cursor: grab;
+}
+#sinapsi-zone {
+  position: absolute;
+  top: 250px;
+  left: 600px;
+  width: 60px;
+  height: 60px;
+  border: 2px dashed purple;
+}
+
+#fibra-muscolare {
+  position: absolute;
+  top: 400px;
+  left: 700px;
+  width: 80px;
+  height: 40px;
+  background: red;
+  border-radius: 10px;
+}

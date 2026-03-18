@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il viaggio dell'impulso nervoso</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Il viaggio dell'impulso nervoso ⚡</h1>
+
+  <!-- Gioco -->
+  <div id="game">
+    <img src="images/impulso.png" alt="Schema neurone" id="background">
+
+    <!-- Impulso nervoso -->
+    <div id="impulso"></div>
+
+    <!-- Livello 1: Clicca dendriti, corpo, assone -->
+    <div class="click-zone" id="dendriti" data-step="1"></div>
+    <div class="click-zone" id="corpo" data-step="2"></div>
+    <div class="click-zone" id="assone" data-step="3"></div>
+
+    <!-- Livello 3: Drag vescicole -->
+    <div id="vescicole" draggable="true"></div>
+    <div id="sinapsi-zone"></div>
+
+    <!-- Livello muscolo -->
+    <div id="giunzione"></div>
+    <div id="fibra-muscolare"></div>
+  </div>
+
+  <!-- Quiz finale -->
+  <div id="quiz" style="display:none;">
+    <h2>Quiz finale</h2>
+    <p>1. Dove avviene la comunicazione tra due neuroni?</p>
+    <input type="radio" name="q1" value="dendriti">Dendriti<br>
+    <input type="radio" name="q1" value="assone">Assone<br>
+    <input type="radio" name="q1" value="sinapsi">Sinapsi<br>
+
+    <p>2. Quale sostanza chimica viene rilasciata nella giunzione neuromuscolare?</p>
+    <input type="radio" name="q2" value="dopamina">Dopamina<br>
+    <input type="radio" name="q2" value="serotonina">Serotonina<br>
+    <input type="radio" name="q2" value="acetilcolina">Acetilcolina<br>
+
+    <p>3. Qual è la funzione del motoneurone?</p>
+    <input type="radio" name="q3" value="ricevere stimoli">Ricevere stimoli sensoriali<br>
+    <input type="radio" name="q3" value="controllare cuore">Controllare il cuore<br>
+    <input type="radio" name="q3" value="trasmettere muscoli">Trasmettere il segnale ai muscoli<br>
+
+    <p>4. Cosa provoca la contrazione del muscolo?</p>
+    <input type="radio" name="q4" value="arrivo">Arrivo impulso<br>
+    <input type="radio" name="q4" value="rilascio">Rilascio neurotrasmettitori<br>
+    <input type="radio" name="q4" value="attivazione">Attivazione fibre muscolari<br>
+    <input type="radio" name="q4" value="tutte">Tutte le precedenti<br>
+
+    <button onclick="controllaQuiz()">Verifica</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
